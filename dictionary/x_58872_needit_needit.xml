@@ -2,5 +2,21 @@
     <element db_object_id="3af21f571b846110e58e8774cc4bcb0f" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element label="New Field1" max_length="20" name="new_field1" type="string"/>
         <element label="New Field2" max_length="40" name="new_field2" type="integer"/>
+        <element choice="1" display="true" label="Request type" mandatory="true" max_length="20" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="facilities" value="facilities"/>
+                <element inactive_on_update="false" label="hr" value="hr"/>
+                <element inactive_on_update="false" label="legal" value="legal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element choice="1" label="What needed" mandatory="true" max_length="20" name="what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" value="Facilities"/>
+                <element inactive_on_update="false" label="Human Resources" value="Human Resources"/>
+                <element inactive_on_update="false" label="Legal" value="Legal"/>
+                <element inactive_on_update="false" label="Other" value="Other"/>
+            </choice>
+        </element>
     </element>
 </database>
