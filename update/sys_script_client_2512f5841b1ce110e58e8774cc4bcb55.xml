@@ -13,7 +13,7 @@
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
     if(g_form.isNewRecord()){
-        g_form.setValue('short_description', g_form.getValue('short_description') + g_user.firstName + g_user.lastName);
+        g_form.setValue('description', g_form.getValue('description') + g_user.firstName + g_user.lastName);
     }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>

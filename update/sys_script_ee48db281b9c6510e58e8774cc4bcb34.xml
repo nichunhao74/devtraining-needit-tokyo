@@ -30,7 +30,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
     // Add your code here
-    current.short_description = "This text set by the Debugging Business Rules business rule.";
+    current.description = "This text set by the Debugging Business Rules business rule.";
     var myNum = current.state;
 
     // The function in this try/catch is not defined
